@@ -18,6 +18,7 @@ public class Application {
         do{
 
             System.out.println("Меню");
+            System.out.println("[0] Следующий день");
             System.out.println("[1] Добавление нового животного в зоопарк");
             System.out.println("[2] Отображение всех животных");
             System.out.println("[3] Удаление животного по кличке");
@@ -26,6 +27,10 @@ public class Application {
             System.out.println("[6] Выход");
             a=scanner.nextInt();
             switch (a){
+                case 0:{
+                    zoo.next_day_zoo();
+                    break;
+                }
                 case 1:{
                     zoo.addAnimal(input.input_animal());
                     break;
